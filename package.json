@@ -1,0 +1,15 @@
+{
+  "name": "learn-js",
+  "version": "1.0.0",
+  "description": "just for learning",
+  "main": "index.js",
+  "repository": "https://github.com/andisultan/learn-js.git",
+  "author": "andi sultan",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  }
+}
