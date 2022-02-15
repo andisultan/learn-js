@@ -113,3 +113,60 @@ function factorial(num) {
 }
 
 console.log(factorial(6));
+
+/**
+ * Power
+ * -----------------------------------------------------
+ * @param {Number} num
+ * @param {Number} p
+ *
+ */
+function pow(num, p) {
+  if (p === 0) return 1;
+  return num * pow(num, p - 1);
+}
+
+console.log(pow(4, 3));
+
+/**
+ * Selection Sort
+ * -----------------------------------------------------
+ * @param {String} array of numbers
+ *
+ */
+
+function selectionSort(num) {
+  for (let index = 0; index < num.length; index++) {
+    const element = num[index];
+    for (let i = index + 1; i < num.length; i++) {
+      const element2 = num[i];
+      if (element > element2) {
+        num[index] = element2;
+        num[i] = element;
+      }
+    }
+  }
+  return num;
+}
+
+console.log(selectionSort(nums));
+
+/**
+ * Buble Sort
+ * -----------------------------------------------------
+ * @param {String} array of numbers
+ *
+ */
+function bubbleSort(num) {
+  for (let i = 0; i < num.length; i++) {
+    for (let index = 0; index < num.length - 1; index++) {
+      const element = num[index];
+      const element2 = num[index + 1];
+      if (element > element2) {
+        num[index] = element2;
+        num[index + 1] = element;
+      }
+    }
+  }
+  return num;
+}
